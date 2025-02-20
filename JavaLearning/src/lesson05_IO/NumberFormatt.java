@@ -17,11 +17,11 @@ public class NumberFormatt {
 		double result = number * number2;
 		// Print it like normal
 		System.out.println("Unformatted result: " + result);
-		// Print result in a formatted way: £61.60
+		// Print result in a formatted way: symbol 61.60
 		NumberFormat currency = NumberFormat.getCurrencyInstance(Locale.CHINA);
 		System.out.println("Formatted result: " + currency.format(result));
 		// Set up your own format
-		DecimalFormat myFormat = new DecimalFormat("00.00 €");
+		DecimalFormat myFormat = new DecimalFormat("00.00 \u20AC");
 		System.out.println("With my format: " + myFormat.format(result));
 	}
 }
