@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class FahrenheitToCelsius {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in); //read keyboard input
+        Scanner input = new Scanner(System.in); // read keyboard input
         System.out.print("Enter an integer in fahrenheit: ");
         int fahrenheit = input.nextInt();
         input.nextLine(); // Clears the input for the next line
@@ -19,7 +19,9 @@ public class FahrenheitToCelsius {
             System.out.println("Yay! Go to park.");
         }
         else {
-            System.out.println("Stay home where there’s wi-fi and learn 1331 online");
+            System.out.println("Stay home where there is wi-fi and learn 1331 online");
         }
     }
 }
+
+// raining = rainInput.startsWith("y") ? true : false; Ternary condition operator.
